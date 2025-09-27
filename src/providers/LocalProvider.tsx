@@ -4,11 +4,11 @@ import type { ReactNode } from "react";
 
 export default function LocalProvider({
   children,
-  locale,
+  locale = "ar",
   messages,
 }: {
   children: ReactNode;
-  locale: string | undefined;
+  locale: string;
   messages: AbstractIntlMessages | undefined;
 }) {
   function onError(error: { code: string }) {
