@@ -1,0 +1,41 @@
+{
+  "HomePage": {
+    "title": "Hello world!",
+    "about": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    "back": "Back",
+    "more": "Read more"
+  },
+  "Navigation": {
+    "home": "Home",
+    "about": "About us",
+    "services": "Services",
+    "blog": "Blog",
+    "ourTeam": "Our Team",
+    "contact": "Contact us"
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, ar {🇪🇬 العربيه} en {English 🇺🇸} other {Unknown}}"
+  },
+  "Settings": {
+    "Settings": "Settings"
+  },
+  "Search": {
+    "placeholder": "Search services and team...",
+    "search": "Search",
+    "results": "Search Results",
+    "noQuery": "No search query provided",
+    "noQueryDescription": "Please enter a search term to find services and team members.",
+    "services": "Services",
+    "teamMembers": "Team Members",
+    "noResults": "No results found",
+    "noResultsDescription": "We couldn't find any services or team members matching",
+    "browseAllServices": "Browse All Services",
+    "meetOurTeam": "Meet Our Team",
+    "viewDetails": "View Details"
+  },
+  "Team": {
+    "team": "Our Team",
+    "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+  }
+}
