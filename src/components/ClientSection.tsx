@@ -8,7 +8,7 @@ const ClientSection = () => {
   return (
     <div className=" bg-brand-primary h-[100vh] flex items-center justify-center">
       <div className="container mx-44 flex items-start justify-center gap-4 flex-col p-4">
-        <h2 className="text-bold text-3xl md:text-4xl text-white text-start ">
+        <h2 className="text-bold text-xl md:text-4xl text-white text-start ">
           What our clients are saying
         </h2>
         <p className="w-[90%] md:w-3xl text-gray-300 ">
@@ -25,7 +25,7 @@ const ClientSection = () => {
                 width={374}
                 height={374}
                 objectFit="cover"
-                className="rounded-lg w-full"
+                className="rounded-lg  w-[250px] md:w-full object-cover "
               />
             </div>
           </div>
