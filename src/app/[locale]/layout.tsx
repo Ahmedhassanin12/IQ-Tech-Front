@@ -26,12 +26,12 @@ export const metadata: Metadata = {
 
 export default async function LocaleLayout({
   children,
-  params,
+  params = { locale: "en" },
 }: Readonly<{
   children: React.ReactNode;
   params: { locale: string };
 }>) {
-  const { locale = "ar" } = await params;
+  const { locale } = await params;
   const messages = await getMessages();
 
   if (!routing.locales.includes(locale as "ar" | "en")) {

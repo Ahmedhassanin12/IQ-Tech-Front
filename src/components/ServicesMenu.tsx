@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 
-import { useLocale } from "next-intl";
+
 import NavigationLink from "@/common/components/NavigationLink";
 import { getServices } from "@/lib/api/services/services";
 import { useAppDispatch } from "@/store/hook";
@@ -8,8 +8,8 @@ import { toggleService } from "@/store/mainAppSlice";
 
 const ServicesMenu = ({ isServicesOpen }: { isServicesOpen: boolean }) => {
   const dispatch = useAppDispatch();
-  const locale = useLocale();
-  const isRtl = locale === "ar"
+
+
   const { isLoading, error, data, refetch } = useQuery({
     queryKey: ["SERVICES", isServicesOpen],
     enabled: isServicesOpen,
