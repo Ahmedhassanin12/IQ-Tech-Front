@@ -29,7 +29,7 @@ export default async function LocaleLayout({
   params = { locale: "en" },
 }: Readonly<{
   children: React.ReactNode;
-  params: { locale: string };
+  params: { locale?: string };
 }>) {
   const { locale } = await params;
   const messages = await getMessages();
@@ -37,7 +37,7 @@ export default async function LocaleLayout({
   if (!routing.locales.includes(locale as "ar" | "en")) {
     notFound();
   }
-  setRequestLocale(locale);
+  setRequestLocale(locale ?? "en");
 
   return (
     <html lang={locale} dir={locale === "en" ? "ltr" : "rtl"}>
@@ -45,7 +45,7 @@ export default async function LocaleLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ReduxToolkitProvider>
-          <LocalProvider locale={locale} messages={messages}>
+          <LocalProvider locale={locale ?? "en"} messages={messages}>
             <ReactQueryProvider>
               <HeaderNavigation />
               <main className="relative max-h-screen overflow-x-hidden">
